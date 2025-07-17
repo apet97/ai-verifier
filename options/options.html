@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AI Verifier Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <h1>Settings</h1>
+    <section>
+      <h2>Filtering</h2>
+      <label><input type="checkbox" id="blockFully"> Block Fully AI</label><br>
+      <label><input type="checkbox" id="blockVisuals"> Block AI‑Assisted Visuals</label><br>
+      <label><input type="checkbox" id="blockVoice"> Block AI Voice</label><br>
+      <label><input type="checkbox" id="blockScript"> Block AI‑Scripted</label>
+    </section>
+    <section>
+      <h2>Whitelist</h2>
+      <textarea id="whitelist" rows="6" placeholder="Video or channel IDs, one per line"></textarea>
+    </section>
+    <button id="save">Save</button>
+    <script src="options.js"></script>
+  </body>
+</html>

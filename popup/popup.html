@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI Verifier</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI Verifier</h1>
+    <div class="version">v0.2.0</div>
+  </div>
+  
+  <div class="section">
+    <h3>Content Filtering</h3>
+    <label class="toggle-label">
+      <input type="checkbox" id="filterEnabled">
+      <span class="toggle-slider"></span>
+      Enable AI Content Filtering
+    </label>
+    
+    <div class="threshold-container" id="thresholdContainer">
+      <label>Confidence Threshold: <span id="thresholdLabel">75%</span></label>
+      <input type="range" id="threshold" min="50" max="100" value="75" class="slider">
+      <div class="threshold-labels">
+        <span>50%</span>
+        <span>75%</span>
+        <span>100%</span>
+      </div>
+    </div>
+    
+    <div class="filter-options" id="filterOptions">
+      <label><input type="checkbox" id="hideVideos"> Hide flagged videos completely</label>
+      <label><input type="checkbox" id="blurThumbnails" checked> Blur thumbnails</label>
+      <label><input type="checkbox" id="showWarning" checked> Show warning overlay</label>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h3>Statistics</h3>
+    <div class="stats-grid" id="stats">
+      <div class="stat-item">
+        <div class="stat-number" id="totalTagged">0</div>
+        <div class="stat-label">Videos Tagged</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" id="totalFiltered">0</div>
+        <div class="stat-label">Videos Filtered</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h3>Tag Categories</h3>
+    <div class="tag-legend" id="tagLegend">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+  
+  <div class="actions">
+    <button id="clearData" class="btn-secondary">Clear All Data</button>
+    <button id="exportData" class="btn-primary">Export Tags</button>
+  </div>
+  
+  <div class="section">
+    <h3>Support Development</h3>
+    <div class="donation-section">
+      <p>If you find this extension useful, consider supporting development:</p>
+      <div class="crypto-donations">
+        <div class="crypto-item">
+          <div class="crypto-header">
+            <span class="crypto-icon">₿</span>
+            <span class="crypto-name">Bitcoin</span>
+            <button class="copy-btn" data-address="bc1qyour-bitcoin-address-here">Copy</button>
+          </div>
+          <div class="crypto-address" id="btc-address">bc1qyour-bitcoin-address-here</div>
+        </div>
+        <div class="crypto-item">
+          <div class="crypto-header">
+            <span class="crypto-icon">Ξ</span>
+            <span class="crypto-name">Ethereum</span>
+            <button class="copy-btn" data-address="0xYourEthereumAddressHere">Copy</button>
+          </div>
+          <div class="crypto-address" id="eth-address">0xYourEthereumAddressHere</div>
+        </div>
+      </div>
+      <div class="github-link">
+        <a href="https://github.com/apet97/ai-verifier" target="_blank">
+          <span>⭐</span> Star on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
