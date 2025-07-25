@@ -55,13 +55,6 @@ The extension can work with a local API server for enhanced features:
 - No personal information is collected or transmitted
 - Tags are stored anonymously
 
-## Support the Project
-
-If you find this extension useful, consider supporting development:
-
-**Bitcoin**: `bc1qyour-bitcoin-address-here`
-
-**Ethereum**: `0xYourEthereumAddressHere`
 
 ## Contributing
 
