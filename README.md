@@ -59,10 +59,6 @@ The extension can work with a local API server for enhanced features:
 
 If you find this extension useful, consider supporting development:
 
-**Bitcoin**: `bc1qyour-bitcoin-address-here`
-
-**Ethereum**: `0xYourEthereumAddressHere`
-
 ## Contributing
 
 1. Fork the repository
